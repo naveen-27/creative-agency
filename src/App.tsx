@@ -1,7 +1,8 @@
 import React, { FC } from "react";
+import Header from "./components/Header";
 
 const App: FC = () => {
-  return <h1>Creative Agency</h1>;
+  return <Header />;
 };
 
 export default App;
