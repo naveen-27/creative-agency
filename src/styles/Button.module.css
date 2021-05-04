@@ -1,0 +1,33 @@
+.Button {
+  cursor: pointer;
+  outline: none;
+  padding: 1rem 2rem;
+  border: 0.2rem solid;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--white);
+  transition: background-color 200ms ease;
+}
+
+.red {
+  background-color: var(--pale-red);
+  border-color: var(--pale-red);
+}
+
+.black {
+  background-color: var(--black);
+  border-color: var(--black);
+}
+
+.black:hover,
+.black:focus-visible {
+  background-color: var(--grey-white);
+  color: var(--black);
+}
+
+.red:hover,
+.red:focus-visible {
+  background-color: var(--grey-white);
+  color: var(--pale-red);
+}
