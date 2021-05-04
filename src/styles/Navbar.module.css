@@ -1,0 +1,43 @@
+.Navbar {
+  flex: 1 1 70%;
+  padding: 3rem;
+  background-color: var(--pale-red);
+}
+
+.NavList {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.NavLink {
+  text-decoration: none;
+  color: var(--grey-white);
+  font-size: 1.15rem;
+  position: relative;
+  outline: none;
+}
+
+.NavLink::after {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  right: 0;
+  height: 0.2rem;
+  background-color: var(--black);
+  transform: scale(0, 1);
+  transition: transform 150ms ease-in;
+}
+
+.NavLink:hover::after,
+.NavLink:focus-visible::after {
+  transform: scale(1);
+}
+
+@media (max-width: 900px) {
+  .Navbar {
+    padding: 3rem 1rem;
+  }
+}
