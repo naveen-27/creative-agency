@@ -1,0 +1,9 @@
+.Header {
+  display: flex;
+}
+
+.Logo {
+  flex: 1 1 30%;
+  display: grid;
+  place-items: center;
+}
