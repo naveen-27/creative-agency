@@ -41,3 +41,26 @@
     padding: 3rem 1rem;
   }
 }
+
+@media (max-width: 750px) {
+  .Navbar {
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+  }
+
+  .NavList {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .MobileNav {
+    transition: transform 250ms linear;
+    transform-origin: 100% 0;
+  }
+
+  .MobileNavCollapsed {
+    transform: scale(0);
+  }
+}

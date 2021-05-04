@@ -1,9 +1,19 @@
 .Header {
   display: flex;
+  align-items: center;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.35);
 }
 
 .Logo {
-  flex: 1 1 30%;
+  flex: 0 1 30%;
   display: grid;
   place-items: center;
+}
+
+@media (max-width: 750px) {
+  .Header {
+    padding: 2rem 1.5rem;
+    justify-content: space-between;
+    position: relative;
+  }
 }
