@@ -16,10 +16,9 @@ const Navbar: FC<NavbarProps> = (props: NavbarProps) => {
 
   return (
     <nav
-      className={`
-      ${classes.Navbar} 
-      ${props.isMobileNavOpen ? "" : classes.MobileNavCollapsed} 
-      ${props.isDeviceMobile ? classes.MobileNav : ""}`}
+      className={`${classes.Navbar} ${
+        props.isMobileNavOpen ? "" : classes.MobileNavCollapsed
+      } ${props.isDeviceMobile ? classes.MobileNav : ""}`}
       aria-hidden={ariaHidden}
     >
       <ul className={classes.NavList}>
