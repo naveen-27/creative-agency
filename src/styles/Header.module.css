@@ -10,6 +10,10 @@
   place-items: center;
 }
 
+.ToggleMenu:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 750px) {
   .Header {
     padding: 2rem 1.5rem;
