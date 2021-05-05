@@ -26,8 +26,10 @@ const Header: FC = () => {
         isMobileNavOpen={isMobileNavOpen}
         isDeviceMobile={device === "mobile"}
       />
-      {shouldRenderHam && <Ham onClick={toggleMenu} />}
-      {shouldRenderCross && <Cross onClick={toggleMenu} />}
+      <div className={classes.ToggleMenu} onClick={toggleMenu}>
+        {shouldRenderHam && <Ham />}
+        {shouldRenderCross && <Cross />}
+      </div>
     </header>
   );
 };
