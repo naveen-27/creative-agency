@@ -3,13 +3,19 @@ import classes from "../styles/Button.module.css";
 
 interface ButtonProps {
   innerText: string;
-  appearanceClass: string;
+  appearanceClass: "red" | "black";
 }
 
 const Button: FC<ButtonProps> = (props: ButtonProps) => {
+  const customStyles = {
+    "--background":
+      props.appearanceClass === "red" ? "var(--pale-red)" : "var(--black)",
+  } as React.CSSProperties;
+
   return (
     <button
-      className={`${classes.Button} ${classes[props.appearanceClass]}`}
+      style={customStyles}
+      className={classes.Button}
       aria-label={props.innerText}
     >
       {props.innerText}
