@@ -1,0 +1,56 @@
+.Hero {
+  display: flex;
+  height: min(750px, 100vh);
+}
+
+.Hero > * {
+  width: 50%;
+}
+
+.HeroImg > img {
+  width: 100%;
+  height: 100%;
+}
+
+.HeroText {
+  align-self: center;
+  padding: 2rem;
+  transform: translateX(25%);
+}
+
+.HeroText > *:not(button) {
+  width: 80%;
+}
+
+.HeroText > * + * {
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .HeroText > *:not(button) {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .Hero {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .Hero > * {
+    width: 100%;
+  }
+
+  .HeroText {
+    transform: translateX(0);
+  }
+
+  .HeroImg {
+    height: clamp(200px, 50vw, 350px);
+  }
+
+  .HeroText > * + * {
+    margin-top: 2rem;
+  }
+}
