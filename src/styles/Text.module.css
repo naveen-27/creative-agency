@@ -1,0 +1,36 @@
+.large {
+  font-weight: 600;
+  font-size: max(5vw, 3rem);
+}
+
+.medium {
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+.small {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+@media (max-width: 900px) {
+  .small {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .large {
+    font-size: 2.4rem;
+  }
+
+  .small {
+    font-size: 1.1rem;
+    line-height: 1.65rem;
+  }
+
+  .medium {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
