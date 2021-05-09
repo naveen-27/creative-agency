@@ -15,4 +15,5 @@
 
 body {
   font-family: "Commissioner", sans-serif;
+  min-width: 280px;
 }
