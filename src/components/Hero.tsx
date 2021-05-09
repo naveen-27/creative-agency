@@ -25,7 +25,7 @@ const Hero: FC = () => {
       <picture className={classes.HeroImg}>
         <source srcSet={heroDesktop} media="(min-width: 900px)" />
         <source srcSet={heroTablet} media="(min-width: 750px)" />
-        <img src={heroMobile} alt="Design Aesthetic" />
+        <img src={heroMobile} alt="Impressive Designs" />
       </picture>
     </div>
   );
