@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Design from "./components/Design";
 import Services from "./components/Services";
+import Approach from "./components/Approach";
 
 const App: FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: FC = () => {
       <Header />
       <Hero />
       <Design />
+      <Approach />
       <Services />
       <Footer />
     </>
