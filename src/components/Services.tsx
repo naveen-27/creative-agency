@@ -64,10 +64,16 @@ const Services: FC = () => {
           content={`Brand naming & ${ServicesList[topImg].title}`}
         />
         <div className={classes.BtnGroup}>
-          <button data-op="prev" onClick={handleClick} disabled={topImg === 0}>
+          <button
+            aria-label="Previous"
+            data-op="prev"
+            onClick={handleClick}
+            disabled={topImg === 0}
+          >
             <Prev />
           </button>
           <button
+            aria-label="Next"
             data-op="next"
             onClick={handleClick}
             disabled={topImg === ServicesList.length - 1}

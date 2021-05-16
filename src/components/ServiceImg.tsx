@@ -37,10 +37,13 @@ const images = {
 };
 
 const ServiceImg: FC<serviceImgProps> = (props) => {
-  const { img: src, title, projectName, year, active } = props;
+  const { img: src, title, projectName, year, active: isActive } = props;
 
   return (
-    <div className={`${classes.Picture} ${active ? classes.Active : ""}`}>
+    <div
+      className={`${classes.Picture} ${isActive ? classes.Active : ""}`}
+      aria-hidden={isActive ? "false" : "true"}
+    >
       <picture>
         <source srcSet={images[src].desktop} media="(min-width: 900px)" />
         <source srcSet={images[src].tablet} media="(min-width: 750px)" />
