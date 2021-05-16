@@ -96,3 +96,9 @@ button[data-op="next"] {
     width: 100%;
   }
 }
+
+@media (min-width: 750px) {
+  .ServicesContainer {
+    transform: translateY(-8rem);
+  }
+}
