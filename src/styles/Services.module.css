@@ -1,0 +1,98 @@
+.ServicesContainer {
+  position: relative;
+}
+
+.ServiceControl {
+  background-color: #191921;
+  padding: 8rem 5rem;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.ServiceControl > h3 {
+  width: 80%;
+  margin-bottom: 4rem;
+}
+
+.BtnGroup > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-right: 1.5rem;
+  transition: transform 200ms ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.BtnGroup > button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.BtnGroup > button:disabled {
+  opacity: 0.5;
+}
+
+button[data-op="prev"] {
+  --rotate-deg: -25deg;
+}
+
+button[data-op="next"] {
+  --rotate-deg: 25deg;
+}
+
+.BtnGroup > button:disabled {
+  cursor: not-allowed;
+}
+
+.BtnGroup > button:hover,
+.BtnGroup > button:focus-visible {
+  transform: scale(1.2) rotate(var(--rotate-deg));
+}
+
+.Images {
+  overflow-x: hidden;
+  width: 65%;
+  margin-left: auto;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.35);
+}
+
+.Images > div {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  transform: translateX(calc(var(--transform) * 100%));
+  transition: transform 500ms ease;
+}
+
+@media (max-width: 900px) {
+  .ServiceControl > h3 {
+    width: 100%;
+  }
+
+  .ServiceControl {
+    padding: 6rem 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .ServiceControl {
+    position: static;
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+
+  .ServiceControl > h3 {
+    margin-bottom: 2rem;
+  }
+
+  .Images {
+    width: 100%;
+  }
+}
