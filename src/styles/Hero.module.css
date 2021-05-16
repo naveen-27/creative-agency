@@ -43,6 +43,7 @@
   }
 
   .HeroText {
+    padding: 4rem 2rem;
     transform: translateX(0);
   }
 
