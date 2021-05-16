@@ -1,0 +1,39 @@
+.KeyPoint {
+  position: relative;
+  padding-left: 2rem;
+  color: var(--white);
+}
+
+.No {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
+}
+
+.PointTitle {
+  font-size: 1.35rem;
+  margin-bottom: 2rem;
+}
+
+.Point {
+  font-size: 1.15rem;
+  line-height: 1.75rem;
+}
+
+.KeyPoint + .KeyPoint {
+  margin-top: 6rem;
+}
+
+@media (max-width: 900px) {
+  .KeyPoint {
+    padding-left: 0;
+  }
+
+  .No {
+    transform: translate(-20%, -50%);
+  }
+}
