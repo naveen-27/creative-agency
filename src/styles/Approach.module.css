@@ -1,0 +1,47 @@
+.Approach {
+  display: flex;
+}
+
+.ApproachText {
+  padding: 0 2rem;
+  transform: translateX(25%);
+  align-self: center;
+}
+
+.Points {
+  flex: 1 0 60%;
+  padding: 15%;
+  background-color: var(--pale-red);
+}
+
+@media (max-width: 900px) {
+  .Points {
+    padding: 10rem 4rem;
+  }
+
+  .ApproachText {
+    padding: 0;
+    transform: translateX(10%);
+  }
+}
+
+@media (max-width: 750px) {
+  .Approach {
+    flex-direction: column;
+  }
+
+  .ApproachText {
+    padding: 4rem 2rem;
+    background-color: var(--pale-red);
+    text-align: center;
+    transform: translateX(0);
+  }
+
+  .ApproachText > h3 {
+    text-shadow: 0.25rem 0.15rem 0.5rem rgba(0, 0, 0, 0.6);
+  }
+
+  .Points {
+    padding: 4rem 2rem;
+  }
+}
