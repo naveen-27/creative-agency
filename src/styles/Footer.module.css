@@ -19,21 +19,15 @@
   margin-right: 1rem;
 }
 
-@media (max-width: 900px) {
-  .Wave {
-    transform: scale(0.75) translate(-50%, -50%);
-  }
-}
-
 @media (max-width: 750px) {
   .Footer {
     flex-direction: column;
-    padding: 2rem;
+    padding: 4rem 2rem;
   }
 
   .Footer > h3 {
     width: 100%;
-    padding: 0 0 2rem 0;
+    margin: 0 0 2.5rem 0;
     text-align: center;
   }
 
