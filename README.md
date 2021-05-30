@@ -2,18 +2,18 @@
 
 [Creative Agency](https://creative-agency-jade.vercel.app) is a single page website submitted for a challenge on [Frontendmentor](https://www.frontendmentor.io/).
 
-### Design
+## Design
 
 ![Creative Agency design preview](./design.jpg)
 
-### Written In
+## Written In
 
 - React
 - React Hooks
 - Typescript
 - CSS modules
 
-### Code Highlights
+## Code Highlights
 
 - Responsive design across wide range of viewports
 - Modular CSS
@@ -21,11 +21,11 @@
 - Consistent design pattern
 - Used Transition best practises for optimal performance
 
-### Lighthouse Performance
+## Lighthouse Performance
 
 ![Lighthouse performance meter score](./performance.png)
 
-### Run Locally
+## Run Locally
 
 1. Install node.js and npm
 1. Clone the repository using `git clone https://github.com/naveen-27/creative-agency.git`
